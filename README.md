@@ -81,15 +81,14 @@
 > ```
 
 > 🔗 **程式碼閱覽 (Code Highlight)：**
-> * [PlayerController.cs](./Assets/Scripts/PlayerController.cs) -[Uploading playerController.cs…]()
- 處理角色移動與附身狀態切換
-> * [PossessableObject.cs](./Assets/Scripts/PossessableObject.cs) - 物件被附身後的行為邏輯
+> * [PlayerController.cs](./Assets/Scripts/玩家/PlayerController.cs) - 處理角色移動與附身狀態切換
+> * [PossessableObject.cs](./Assets/Scripts/劇情對話相關/DialogueManager.cs) - 對話系統
 
 
 ---
 
 ### 🚀 如何試玩 (How to Play)
-1.  從這裡下載 Demo 版本：[]
+1.  從這裡下載 Demo 版本：[https://drive.google.com/file/d/1JJZtUfFZqolUgjR0xRYO-xX5_ILfSLKd/view?usp=sharing]
 2.  解壓縮後執行遊戲。
 3.  **操作說明：**
     * **WASD**: 移動
