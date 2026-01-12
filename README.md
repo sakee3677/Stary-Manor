@@ -1,4 +1,4 @@
-![Parasite](https://github.com/user-attachments/assets/eea0b90f-e42e-4000-8a77-0025d1890e9d)# 專案名稱，例如：Stary-Manor / 迷途莊園
+# 專案名稱:Stary-Manor / 迷途莊園
 
 > 一款基於 Unity 的 Isometric (等距視角) 2D物理解謎遊戲
 > **核心機制：** 靈魂附身系統 / 物理互動解謎
