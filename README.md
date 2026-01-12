@@ -25,7 +25,7 @@
 
 ---
 
-###  技術實作細節 (Technical Details)
+###  技術實作 (Technical Details)
 
 這是我用來練習 Unity 玩法架構的專案，主要技術亮點如下：
 
@@ -38,7 +38,7 @@
     * 實作了 4 方向鎖定 (4-way locking)，確保角色在等距視角下的移動符合視覺預期，避免斜向滑動的違和感。
 
 * **附身狀態機 (Possession State Machine):**
-    * 使用 `Enum` 定義附身階段 (`Prepare` -> `Parasiting` -> `None`)。
+    * 使用 `Enum` 定義附身階段 (`Prepare` -> `Parasiting` -> `None`)。 
     * **平滑過渡 (Smooth Transition):** 在 `Prepare` 階段使用 `Vector3.MoveTowards` 實現靈魂被吸入物體的平滑位移，並在接觸瞬間切換物理碰撞層 (Collision Layer)。
 
 * **介面導向設計 (Interface Oriented):**
@@ -79,7 +79,7 @@
 
 > 🔗 **程式碼閱覽 (Code Highlight)：**
 > * [PlayerController.cs](./Assets/Scripts/玩家/PlayerController.cs) - 處理角色移動與附身狀態切換
-> * [PossessableObject.cs](./Assets/Scripts/劇情對話相關/DialogueManager.cs) - 對話系統
+> * [DialogueManager.cs](./Assets/Scripts/劇情對話相關/DialogueManager.cs) - 對話系統
 
 
 ---
