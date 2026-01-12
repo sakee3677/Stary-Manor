@@ -41,10 +41,6 @@
     * 使用 `Enum` 定義附身階段 (`Prepare` -> `Parasiting` -> `None`)。
     * **平滑過渡 (Smooth Transition):** 在 `Prepare` 階段使用 `Vector3.MoveTowards` 實現靈魂被吸入物體的平滑位移，並在接觸瞬間切換物理碰撞層 (Collision Layer)。
 
-* **動態材質交互 (Dynamic Material Interaction):**
-    * 透過程式碼即時控制 Shader 參數 (`_GlowGlobal`, `_HandDrawnAmount`)。
-    * 實作了線性插值 (Lerp) 算法，讓角色在附身/脫離時產生平滑的發光漸變與透明度變化，增強視覺回饋 (Juice)。
-
 * **介面導向設計 (Interface Oriented):**
     * 透過 `IUsable` 與 `IControllable` 介面與場景物件互動，降低角色與具體物品邏輯的耦合度 (Coupling)。
 
@@ -79,6 +75,7 @@
 >     isWaitingForInput = true;
 > }
 > ```
+
 
 > 🔗 **程式碼閱覽 (Code Highlight)：**
 > * [PlayerController.cs](./Assets/Scripts/玩家/PlayerController.cs) - 處理角色移動與附身狀態切換
