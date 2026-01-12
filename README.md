@@ -1,4 +1,5 @@
 # 專案名稱:Stary-Manor / 迷途莊園
+![menu](https://github.com/user-attachments/assets/328fb70a-e99e-42b5-b236-34b3bd61fc09)
 
 > 一款基於 Unity 的 Isometric (等距視角) 2D物理解謎遊戲
 > **核心機制：** 靈魂附身系統 / 物理互動解謎
