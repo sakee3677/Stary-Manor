@@ -1,7 +1,7 @@
 # Stary-Manor / 迷途莊園
 ![menu](https://github.com/user-attachments/assets/328fb70a-e99e-42b5-b236-34b3bd61fc09)
 
-> 一款基於 Unity 的 Isometric (等距視角) 2D物理解謎遊戲
+> 一款基於 Unity 的 Isometric (等距視角) 2D像素物理解謎遊戲
 > **核心機制：** 靈魂附身系統 / 物理互動解謎
     主角本身不具有物理重量無法推動物品，需要附身不同生物來解謎
 
@@ -9,8 +9,8 @@
 
 ### 🕵️ 故事背景 (Story)
 主角是一位私家偵探，受託進入一座神秘莊園進行調查，卻在途中遭到不明襲擊。
-當主角再次醒來時，發現自己的身體發生了異變——**變成了一具幽靈**。
-雖然失去了肉體，但也意外獲得了** 附身 (Possession) **的能力。玩家必須利用這個能力，操控莊園內的物品，解開機關並查出真相。
+當主角再次醒來時，發現自己的身體發生了異變——**變成了可愛的粉紅幽靈**。
+雖然失去了肉體，但也意外獲得了**附身(Parasite)**的能力。玩家必須利用這個能力，操控莊園內的生物，解開機關推動劇情查出真相。
 
 
 ### 📸 展示 (Showcase)
@@ -21,7 +21,6 @@
  
 |  對話系統 (DialogueManager) | 
 | ![conversation](https://github.com/user-attachments/assets/0b970f46-6802-4a6f-bda7-6f8b6cdc7b7a) |
- 
  *描述：配合劇情的對話系統* 
 
 ---
@@ -29,8 +28,6 @@
 ###  技術實作細節 (Technical Details)
 
 這是我用來練習 Unity 玩法架構的專案，主要技術亮點如下：
-
-#### 核心程式系統 (Core Programming)
 
 #### 核心角色控制器 (Player Controller Implementation)
 腳本：`PlayerController.cs`
@@ -54,7 +51,7 @@
 
  ####  敘事與事件系統 (Narrative & Event Integration)
 腳本：`DialogueManager.cs`
-這不僅是一個文字顯示系統，更是推動遊戲劇情的 **事件驅動器 (Event Driver)**。
+一個文字顯示系統，是推動遊戲劇情的 **事件驅動器 (Event Driver)**。
 
 * **佇列管理 (Queue-based Handling):**
     使用 `Queue<DialogueLine>` 資料結構來管理對話流，確保先進先出 (FIFO) 的邏輯順序。
@@ -95,9 +92,10 @@
 1.  從這裡下載 Demo 版本：[]
 2.  解壓縮後執行遊戲。
 3.  **操作說明：**
-    * **WASD**: 移動靈魂 / 移動被附身的物件
-    * **E 鍵**: 對著物體按下，進行附身 / 解除附身
-    * **Space**: (如果有跳躍或特殊能力可寫在這裡)
+    * **WASD**: 移動
+    * **Space**: 跳躍/空中按住漂浮
+    * **j 鍵**: 在物體上方，進行附身 / 解除附身
+    * **e 建**: 繼續對話
 
 ---
 
